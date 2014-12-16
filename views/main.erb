@@ -1,0 +1,36 @@
+<div class="row">
+  <ul class="nav nav-tabs nav-justified">
+    <li role="presentation" class="active control-tabs" id="home"><a href="#">Home</a></li>
+    <li role="presentation" class="control-tabs" id="spy"><a href="#">Spy</a></li>
+    <li role="presentation" class="control-tabs" id="me"><a href="#">Me</a></li>
+  </ul>
+</div>
+
+<div class="row">
+  <div id="chat-feed" class="container">
+    <div class="well col-md-4" id="create-chat">
+      <h3>Join the dicussion! Create a Chat</h3>
+      <form role="form" method="post" action="<%= url("/new") %>">
+        <textarea class="form-control" name="text" rows="5"></textarea>
+        <input type="hidden" name="authenticity_token"  value="<%= session[:csrf] %>">
+        <button class="btn btn-primary pull-right" type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+    <div class="list-group col-md-offset-1 col-md-7">
+      <% @posts.each do |post| %>
+          <a href="<%= url("/post/"+post.id.to_s) %>" class="list-group-item">
+            <div class="row">
+              <h4 class="list-group-item-heading col-md-8"><%= post.text %></h4>
+              <h4 class="list-group-item-heading col-md-2"><%= post.score %></h4>
+              <div class="col-md-2">
+                <span class="glyphicon glyphicon-arrow-up pull-right" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-arrow-down pull-right"  aria-hidden="true"></span>
+              </div>
+
+            </div>
+          </a>
+      <% end %>
+    </div>
+  </div>
+</div>
+
