@@ -6,3 +6,23 @@
     margin-top: 20px;
 
 }
+
+textarea {
+    resize: none;
+}
+
+.score, .score-comment {
+    font-size: 25px;
+    padding-left: 2px;
+
+
+}
+
+.big {
+    font-size: 50px !important;
+    padding-left: 5px !important;
+}
+
+.jumbotron {
+    margin-top: 20px;
+}

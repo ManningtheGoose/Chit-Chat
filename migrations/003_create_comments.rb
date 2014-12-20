@@ -5,8 +5,10 @@ Sequel.migration do
       String :text
       String :name
       Integer :score
+      Integer :time_created
 
       foreign_key :creator_id, :users
+      foreign_key :post_id, :posts
     end
   end
 

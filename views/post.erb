@@ -1,0 +1,103 @@
+<div class="row">
+  <div class="container">
+    <div class="col-md-12">
+    <div class="jumbotron">
+      <script>
+          $(function () {
+              <% vote = @votes.where(:post_id => @post.id).first%>
+              <% if vote and vote.value == 1 %>
+                console.log("should be green");
+                $("#" + <%= @post.id.to_s %> + ".upvote").css("color","green");
+              <% elsif  vote and vote.value == -1 %>
+                console.log("should be red");
+                $("#"+ <%= @post.id.to_s %> +".downvote").css("color","red");
+              <% end %>
+          });
+      </script>
+      <div class="row">
+        <div class="col-md-10">
+          <h2 class=""><%= @post.text %></h2>
+        </div>
+        <div class="col-md-offset-1 col-md-1">
+          <div class="row">
+            <i class="fa fa-angle-double-up fa-5x upvote" id="<%= @post.id %>"></i>
+          </div>
+          <div class="row">
+            <div class="score big" id="<%= @post.id %>"><%= @post.score %></div>
+          </div>
+          <div class="row">
+            <i class="fa fa-angle-double-down fa-5x downvote" id="<%= @post.id %>"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row ">
+  <div class="container">
+    <div class="col-md-4">
+      <div class="well" id="create-comment">
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Create a comment! Remember to be polite :)</h3>
+          </div>
+        </div>
+          <form role="form" method="post" action="<%= url("/"+@post.id.to_s+"/comment/new") %>">
+            <div class="row">
+              <div class="col-md-12">
+                <textarea class="form-control" name="text" rows="5"></textarea>
+              </div>
+            </div>
+            <input type="hidden" name="authenticity_token"  value="<%= session[:csrf] %>">
+            <div class="row">
+              <div class="col-md-6">
+                <button class="btn btn-primary pull-left">Back</button>
+              </div>
+              <div class="col-md-6">
+                <button class="btn btn-primary pull-right" type="submit" id="submit">Comment</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    <div class="col-md-offset-1 col-md-7">
+      <ul class="list-group">
+        <% @comments.each do |comment| %>
+            <script>
+                $(function () {
+                    <% vote = @votes.where(:comment_id => comment.id).first%>
+                    <% if vote and vote.value == 1 %>
+                    console.log("should be green");
+                    console.log("#" + <%= comment.id.to_s %> + ".upvote");
+                    $("#" + <%= comment.id.to_s %> + ".upvote-comment").css("color","green");
+                    <% elsif  vote and vote.value == -1 %>
+                    console.log("should be red");
+                    $("#"+ <%= comment.id.to_s %> +".downvote-comment").css("color","red");
+                    <% end %>
+                });
+            </script>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-md-10">
+                  <h4 class="list-group-item-heading "><%= comment.text %></h4>
+                </div>
+                <div class="col-md-offset-1 col-md-1">
+                  <div class="row">
+                    <i class="fa fa-angle-double-up fa-2x upvote-comment" id="<%= comment.id %>"></i>
+                  </div>
+                  <div class="row">
+                    <div class="score-comment list-group-item-heading" id="<%= comment.id %>"><%= comment.score %></div>
+                  </div>
+                  <div class="row">
+                    <i class="fa fa-angle-double-down fa-2x downvote-comment" id="<%= comment.id %>"></i>
+                  </div>
+                </div>
+              </div>
+            </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+  </div>
+</div>
+
