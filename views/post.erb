@@ -20,14 +20,33 @@
         </div>
         <div class="col-md-offset-1 col-md-1">
           <div class="row">
-            <i class="fa fa-angle-double-up fa-5x upvote" id="<%= @post.id %>"></i>
+            <div class="col-md-12">
+              <i class="fa fa-angle-double-up fa-4x upvote pull-right" id="<%= @post.id %>"></i>
+            </div>
           </div>
           <div class="row">
-            <div class="score big" id="<%= @post.id %>"><%= @post.score %></div>
+            <div class="col-md-12">
+              <div class="score big pull-right" id="<%= @post.id %>"><%= @post.score %></div>
+            </div>
           </div>
           <div class="row">
-            <i class="fa fa-angle-double-down fa-5x downvote" id="<%= @post.id %>"></i>
+            <div class="col-md-12">
+              <i class="fa fa-angle-double-down fa-4x downvote pull-right" id="<%= @post.id %>"></i>
+            </div>
           </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <a class="btn btn-primary btn-lg pull-left" id="back" href="<%= url('/') %>">Back</a>
+        </div>
+        <div class="col-md-6">
+          <% if @post.creator == current_user %>
+              <form role="form" method="post" action="<%= url("/post/#{@post.id.to_s}/delete") %>" class="delete-form" id="<%= @post.id %>">
+                <input type="hidden" name="authenticity_token"  value="<%= session[:csrf] %>">
+                <a class="btn btn-danger delete-btn btn-lg pull-right" id="<%= @post.id %>"><i class="fa fa-trash"></i> </a>
+              </form>
+          <% end %>
         </div>
       </div>
     </div>
@@ -36,12 +55,13 @@
 <div class="row ">
   <div class="container">
     <div class="col-md-4">
-      <div class="well" id="create-comment">
-        <div class="row">
-          <div class="col-md-12">
-            <h3>Create a comment! Remember to be polite :)</h3>
+      <ul class="list-group" id="create-comment">
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-md-12">
+              <h3>Create a comment!</h3>
+            </div>
           </div>
-        </div>
           <form role="form" method="post" action="<%= url("/"+@post.id.to_s+"/comment/new") %>">
             <div class="row">
               <div class="col-md-12">
@@ -51,53 +71,73 @@
             <input type="hidden" name="authenticity_token"  value="<%= session[:csrf] %>">
             <div class="row">
               <div class="col-md-6">
-                <button class="btn btn-primary pull-left">Back</button>
-              </div>
-              <div class="col-md-6">
-                <button class="btn btn-primary pull-right" type="submit" id="submit">Comment</button>
+                <button class="btn btn-primary" type="submit" id="submit">Comment</button>
               </div>
             </div>
           </form>
-        </div>
-      </div>
+        </li>
+      </ul>
+    </div>
     <div class="col-md-offset-1 col-md-7">
       <ul class="list-group">
-        <% @comments.each do |comment| %>
-            <script>
-                $(function () {
-                    <% vote = @votes.where(:comment_id => comment.id).first%>
-                    <% if vote and vote.value == 1 %>
-                    console.log("should be green");
-                    console.log("#" + <%= comment.id.to_s %> + ".upvote");
-                    $("#" + <%= comment.id.to_s %> + ".upvote-comment").css("color","green");
-                    <% elsif  vote and vote.value == -1 %>
-                    console.log("should be red");
-                    $("#"+ <%= comment.id.to_s %> +".downvote-comment").css("color","red");
-                    <% end %>
-                });
-            </script>
-            <li class="list-group-item">
-              <div class="row">
-                <div class="col-md-10">
-                  <h4 class="list-group-item-heading "><%= comment.text %></h4>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-md-12">
+              <ul class="nav nav-pills nav-justified">
+                <li role="presentation" id="newest"class="active control-pills"><a href="<%= url("/post/#{@post.id.to_s}/comments?order=newest") %>">Newest</a></li>
+                <li role="presentation" id="voted"class="control-pills"><a href="<%= url("/post/#{@post.id.to_s}/comments?order=voted") %>">Highest Voted</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <div class="comments">
+          <% @comments.each do |comment| %>
+              <script>
+                  $(function () {
+                      <% vote = @votes.where(:comment_id => comment.id).first%>
+                      <% if vote and vote.value == 1 %>
+                      console.log("should be green");
+                      console.log("#" + <%= comment.id.to_s %> + ".upvote");
+                      $("#" + <%= comment.id.to_s %> + ".upvote-comment").css("color","green");
+                      <% elsif  vote and vote.value == -1 %>
+                      console.log("should be red");
+                      $("#"+ <%= comment.id.to_s %> +".downvote-comment").css("color","red");
+                      <% end %>
+                  });
+              </script>
+              <li class="list-group-item">
+                <div class="row">
+                  <div class="col-md-10">
+                    <h4 class="list-group-item-heading "><%= comment.text %></h4>
+                  </div>
+                  <div class="col-md-offset-1 col-md-1">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <i class="fa fa-angle-double-up fa-2x upvote-comment" id="<%= comment.id %>"></i>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="score-comment list-group-item-heading" id="<%= comment.id %>"><%= comment.score %></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <i class="fa fa-angle-double-down fa-2x downvote-comment" id="<%= comment.id %>"></i>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-md-offset-1 col-md-1">
-                  <div class="row">
-                    <i class="fa fa-angle-double-up fa-2x upvote-comment" id="<%= comment.id %>"></i>
-                  </div>
-                  <div class="row">
-                    <div class="score-comment list-group-item-heading" id="<%= comment.id %>"><%= comment.score %></div>
-                  </div>
-                  <div class="row">
-                    <i class="fa fa-angle-double-down fa-2x downvote-comment" id="<%= comment.id %>"></i>
-                  </div>
-                </div>
-              </div>
-            </li>
-        <% end %>
+              </li>
+          <% end %>
+        </div>
       </ul>
     </div>
   </div>
   </div>
 </div>
+<script>
+    $("li.active.control-pills").removeClass("active");
+    $("#"+ "<%=params["order"]%>").addClass("active");
+</script>
 

@@ -5,6 +5,8 @@ GEM
     json (1.8.1)
     multi_json (1.10.1)
     rack (1.5.2)
+    rack-contrib (1.2.0)
+      rack (>= 0.9.1)
     rack-protection (1.5.3)
       rack
     rack-test (0.6.2)
@@ -30,6 +32,8 @@ PLATFORMS
 
 DEPENDENCIES
   json
+  rack
+  rack-contrib
   rake
   sequel
   sinatra

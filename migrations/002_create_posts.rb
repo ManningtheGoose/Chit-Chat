@@ -6,10 +6,11 @@ Sequel.migration do
       String :name
       Integer :score
       Integer :time_created
+      Float :latitude
+      Float :longitude
+      Integer :num_comments
 
       foreign_key :creator_id, :users
-
-
     end
   end
 

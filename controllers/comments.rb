@@ -1,7 +1,16 @@
 class Chit_Chat < Sinatra::Base
 
   get '/post/:post_id/comments' do
-    @comments = Comment.where(:post_id => params[:post_id])
+
+    if !params["order"]
+      params["order"] = "newest"
+    end
+
+    if params["order"] == "newest"
+      @comments = Comment.where(:post_id => params[:post_id]).order(:time_created).reverse
+    elsif params["order"] == "voted"
+      @comments = Comment.where(:post_id => params[:post_id]).order(:score).reverse
+    end
     @post = Post.where(:id => params[:post_id]).first
     @votes = current_user.votes_dataset
     erb :post
@@ -11,11 +20,20 @@ class Chit_Chat < Sinatra::Base
     comment = Comment.new
     comment.text = params[:text]
     comment.creator = current_user
+    comment.post = Post.where(:id => params[:post_id]).first
+    comment.post.num_comments += 1
     comment.score = 0
+    comment.time_created = Time.now.to_i
 
+    comment.post.save
     comment.save
 
     redirect url('/post/'+params[:post_id]+'/comments')
+  end
+
+  post '/comment/:id/delete' do
+    comment = Comment.where(:id => params[:comment_id])
+    comment.destroy
   end
 
   post '/comment/upvote' do

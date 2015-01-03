@@ -1,20 +1,21 @@
 class Chit_Chat < Sinatra::Base
 
-  post '/user/update' do
+  post '/user/location' do
 
-    if params[:user_id] == 0
-      user = User.new
-      user.score = 0
-      user.save
+    puts "params " + params[:latitude].to_s
+    puts "params " + params[:longitude].to_s
 
-      session[:user_id] = user.id
-      return {:new_user_id => user.id}.to_json
-    else
-      session[:user_id] = params[:user_id]
-      return true
-    end
+    user = User.where(:id => session[:user_id]).first
+
+    user.latitude = params[:latitude].to_f
+    user.longitude = params[:longitude].to_f
+
+    user.save
+
+    puts current_user.inspect
+
+    redirect url('/')
 
   end
-
 end
 

@@ -12,5 +12,6 @@ class Chit_Chat < Sinatra::Base
       :secret => '90d0610a8ae346d7c1952d331c1759c95e2955acd74df1a7271c9a9130a7233c'
 
   use Rack::Protection::AuthenticityToken
+  use Rack::PostBodyContentTypeParser
 
 end

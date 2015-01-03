@@ -1,25 +1,3 @@
-function getUser() {
-    if ('localStorage' in window && window[localStorage] !== null) {
-        try {
-            if (localStorage["user_id"]) {
-                $.post('/user/update',{
-                    user_id: localStorage["user_id"]
-                })
-            } else {
-                $.post('/user/update',{
-                    user_id: 0
-                }, function (data) {
-                    localStorage["user_id"] = data["new_user_id"]
-                });
-            }
-        }
-    } else {
-        alert("Browser does not allow to set user data!")
-    }
-}
-
-//Heads up. Not sure if the above code works yet. it is not tested. But I'm tired so I'm leaving it like this.
-
 $.ajaxSetup({
     beforeSend: function(xhr) {
         var token = $('meta[name="authenticity_token"]').attr('content');
@@ -27,11 +5,11 @@ $.ajaxSetup({
     }
 });
 
-
-
 $(function () {
-    $(".control-tabs").on("click",function (event) {
-        $("li.active").removeClass("active");
+    $("#submit-post").addClass("disabled");
+
+    $(".control-pills").on("click",function (event) {
+        $("li.active.order").removeClass("active");
         $("#"+ this.id).addClass("active");
     });
 
@@ -71,6 +49,7 @@ $(function () {
         },"json");
     });
 
+
     $(".downvote-comment").on("click",function (event) {
         console.log("downvote");
         var id = $(this).attr("id");
@@ -83,11 +62,80 @@ $(function () {
         },"json")
     });
 
-    getUser();
+    $("#submit-post").on("click", function (event) {
+
+        $("#location-status").text("Posting...");
+
+        event.preventDefault();
+
+        if ("geolocation" in navigator) {
+
+            navigator.geolocation.getCurrentPosition(function (position) {
+
+                var latitude = position.coords.latitude;
+                var longitude = position.coords.longitude;
+                console.log(latitude);
+                console.log(longitude);
+
+                $("#latitude").attr('value',latitude);
+                $("#longitude").attr('value',longitude);
+
+                $("#post-form").submit();
+
+            }, function () {
+
+                alert("unable to fetch your current location");
+                $("#location-status").text("Post Failed");
+                return false
+            })
+
+        } else {
+            alert("cannot get location!");
+            $("#location-status").text("Post Failed");
+            return false
+        }
+    });
+
+    var height = $("#order-select").css("height");
+    var position = $("#order-select").css("margin-top");
+
+    console.log(height);
+    console.log(position);
+
+    $(".delete-btn").on("click",function (event) {
+        console.log("delte");
+        console.log(this.id);
+       $("#"+ this.id+".delete-form").submit();
+    });
 });
 
+function refreshLocation (old_lat,old_long) {
+    $("#location-status").text("Locating...");
+
+    if ("geolocation" in navigator) {
+        navigator.geolocation.getCurrentPosition(function (position) {
+            var latitude = position.coords.latitude;
+            var longitude = position.coords.longitude;
+            console.log(latitude);
+            console.log(longitude);
+
+            $("#user-latitude").attr('value',latitude);
+            $("#user-longitude").attr('value',longitude);
+
+            if (latitude != old_lat || longitude != old_long) {
+                $("#location-form").submit();
+            }
+
+            $("#submit-post").removeClass("disabled");
+            $("#location-status").text("Located!");
 
 
-
-
-
+        }, function () {
+            alert("unable to fetch your current location");
+            $("#location-status").text("Couldn't get Location");
+        })
+    } else {
+        alert("your browser does not support location!");
+        $("#location-status").text("Couldn't get Location");
+    }
+}

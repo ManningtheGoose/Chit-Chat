@@ -9,20 +9,54 @@
 
 textarea {
     resize: none;
+    margin-top: 20px;
+}
+
+.fixed {
+    position: fixed;
+
 }
 
 .score, .score-comment {
     font-size: 25px;
     padding-left: 2px;
+}
 
+.my-posts {
+    height: 250px;
+    overflow: scroll;
+}
 
+.comments {
+    height: 205px;
+    overflow: scroll;
 }
 
 .big {
-    font-size: 50px !important;
-    padding-left: 5px !important;
+    font-size: 45px !important;
+    padding-right: 5px;
 }
 
 .jumbotron {
     margin-top: 20px;
+    background-color: white !important;
+}
+
+
+#bg {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+}
+#bg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
 }

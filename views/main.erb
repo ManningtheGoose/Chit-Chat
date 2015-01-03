@@ -1,59 +1,142 @@
-<div class="row">
-  <ul class="nav nav-tabs nav-justified">
-    <li role="presentation" class="active control-tabs" id="home"><a href="#">Home</a></li>
-    <li role="presentation" class="control-tabs" id="spy"><a href="#">Spy</a></li>
-    <li role="presentation" class="control-tabs" id="me"><a href="#">Me</a></li>
-  </ul>
-</div>
-
-<div class="row">
-  <div id="chat-feed" class="container">
-    <div class="well col-md-4" id="create-chat">
-      <h3>Join the dicussion! Create a Chat</h3>
-      <form role="form" method="post" action="<%= url("/new") %>">
-        <textarea id="post-text" class="form-control" name="text" rows="5"></textarea>
-        <input type="hidden" name="authenticity_token"  value="<%= session[:csrf] %>">
-        <button class="btn btn-primary pull-right" type="submit" id="submit">Submit</button>
-      </form>
-    </div>
-    <ul class="list-group col-md-offset-1 col-md-7">
-      <% @posts.each do |post| %>
-          <script>
-            $(function () {
-              <% vote = @votes.where(:post_id => post.id).first%>
-              <% if vote and vote.value == 1 %>
+<div id="chat-feed" class="container">
+  <div class="col-md-4 fixed">
+    <ul class="list-group" id="create-chat">
+      <li class="list-group-item">
+        <h3>Join the dicussion! Create a Chat</h3>
+        <form id="post-form" role="form" method="post" action="<%= url("/new") %>">
+          <textarea id="post-text" class="form-control" name="text" rows="5"></textarea>
+          <input type="hidden" name="authenticity_token"  value="<%= session[:csrf] %>">
+          <input type="hidden" id="latitude" name="latitude">
+          <input type="hidden" id="longitude" name="longitude">
+          <div class="row">
+            <div class="col-md-6">
+              <button class="btn btn-primary" type="submit" id="submit-post">Submit</button>
+            </div>
+            <div class="col-md-6">
+              <h3 class=" pull-right"id="location-status">Not found</h3>
+            </div>
+          </div>
+        </form>
+      </li>
+      </ul>
+    <ul class="list-group">
+      <li class="list-group-item">
+        <ul class="nav nav-pills nav-justified">
+          <li role="presentation" id="chats" class="active control-pills my-display"><a href="<%= url("/?order=#{params["order"]}&myDisplay=chats") %>">My Chats</a></li>
+          <li role="presentation" id="comments" class="control-pills my-display"><a href="<%= url("/?order=#{params["order"]}&myDisplay=comments") %>">My Comments</a></li>
+        </ul>
+      </li>
+      <div class="my-posts">
+        <% @my_posts.each do |post| %>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-md-8">
+                  <strong><%= post.text %></strong>
+                </div>
+                <div class="col-md-3 col-md-offset-1">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="score list-group-item-heading pull-right" id="<%=post.id %>"><%= post.score %></div>
+                    </div>
+                  </div>
+              </div>
+                </div>
+              <div class="row" style="margin-top: 15px">
+                <div class="col-md-6">
+                  <a href="<%= url("/post/"+post.id.to_s+"/comments") %>" class="btn btn-primary btn-xs btn-block">Comments &nbsp<span class="badge"><%=post.comments.count %></span></a>
+                </div>
+                <div class="col-md-6">
+                  <form role="form" method="post" action="<%= url("/post/#{post.id.to_s}/delete") %>" class="delete-form" id="<%= post.id %>">
+                    <input type="hidden" name="authenticity_token"  value="<%= session[:csrf] %>">
+                    <a class="btn btn-danger btn-xs btn-block">Delete</a>
+                  </form>
+                </div>
+              </div>
+            </li>
+        <% end %>
+      </div>
+    </ul>
+  </div>
+  <div class="col-md-offset-5 col-md-7">
+    <ul class="list-group">
+      <li class="list-group-item" id="order-select">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="nav nav-pills nav-justified">
+              <li role="presentation" id="newest"class="active control-pills order"><a href="<%= url("/?order=newest&myDisplay=#{params["myDisplay"]}") %>">Newest</a></li>
+              <li role="presentation" id="voted"class="control-pills order"><a href="<%= url("/?order=voted&myDisplay=#{params["myDisplay"]}") %>">Highest Voted</a></li>
+              <li role="presentation" id="commented" class="control-pills order"><a href="<%= url("/?order=commented&myDisplay=#{params["myDisplay"]}") %>">Most Commented</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <div class="posts">
+        <% @posts.each do |post| %>
+            <script>
+              $(function () {
+                <% vote = @votes.where(:post_id => post.id).first%>
+                <% if vote and vote.value == 1 %>
                 console.log("should be green");
                 console.log("#" + <%= post.id.to_s %> + ".upvote");
                 $("#" + <%= post.id.to_s %> + ".upvote").css("color","green");
-              <% elsif  vote and vote.value == -1 %>
+                <% elsif  vote and vote.value == -1 %>
                 console.log("should be red");
                 $("#"+ <%= post.id.to_s %> +".downvote").css("color","red");
-              <% end %>
-            });
-          </script>
-          <li class="list-group-item">
-            <div class="row">
-              <div class="col-md-10">
-                <h4 class="list-group-item-heading "><%= post.text %></h4>
+                <% end %>
+              });
+            </script>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-md-10">
+                  <h4 class="list-group-item-heading "><%= post.text %></h4>
+                </div>
+                <div class="col-md-offset-1 col-md-1">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <i class="fa fa-angle-double-up fa-2x upvote" id="<%=post.id %>"></i>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="score list-group-item-heading" id="<%=post.id %>"><%= post.score %></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <i class="fa fa-angle-double-down fa-2x downvote" id="<%= post.id %>"></i>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="col-md-offset-1 col-md-1">
-                <div class="row">
-                  <i class="fa fa-angle-double-up fa-2x upvote" id="<%=post.id %>"></i>
+              <div class="row">
+                <div class="col-md-6">
+                  <a href="<%= url("/post/"+post.id.to_s+"/comments") %>" class="btn btn-primary">Comments &nbsp<span class="badge"><%= post.comments.count %></span></a>
                 </div>
-                <div class="row">
-                  <div class="score list-group-item-heading" id="<%=post.id %>"><%= post.score %></div>
-                </div>
-                <div class="row">
-                  <i class="fa fa-angle-double-down fa-2x downvote" id="<%= post.id %>"></i>
+                <div class="col-md-6">
+                  <% if post.creator == current_user %>
+                      <form role="form" method="post" action="<%= url("/post/#{post.id.to_s}/delete") %>" class="delete-form" id="<%= post.id %>">
+                        <input type="hidden" name="authenticity_token"  value="<%= session[:csrf] %>">
+                        <a class="btn btn-danger delete-btn pull-right" id="<%= post.id %>"><i class="fa fa-trash"></i> </a>
+                      </form>
+                  <% end %>
                 </div>
               </div>
-            </div>
-            <div class="row">
-              <a href="<%= url("/post/"+post.id.to_s+"/comments") %>" class="col-md-12">Comments</a>
-            </div>
-          </li>
-      <% end %>
+            </li>
+        <% end %>
+      </div>
     </ul>
   </div>
 </div>
+
+<form id="location-form" role="form" method="post" action="<%= url('/user/location') %>">
+  <input type="hidden" name="latitude" id="user-latitude">
+  <input type="hidden" name="longitude" id="user-longitude">
+  <input type="hidden" name="authenticity_token"  value="<%= session[:csrf] %>">
+</form>
+<script>
+  $("li.active").removeClass("active");
+  $("#"+ "<%=params["order"]%>").addClass("active");
+  $("#"+"<%=params["myDisplay"]%>").addClass("active");
+  refreshLocation(<%= current_user.latitude ? current_user.latitude : 0 %>, <%= current_user.longitude ? current_user.longitude : 0 %>);
+</script>
 
