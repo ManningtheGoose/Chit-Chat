@@ -5,8 +5,6 @@ Sequel.migration do
       Integer :score
       Float :latitude
       Float :longitude
-
-
     end
   end
 

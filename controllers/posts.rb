@@ -23,24 +23,26 @@ class Chit_Chat < Sinatra::Base
 
     if current_user.latitude and current_user.longitude
 
-      if params["order"] == "newest"
-        Post.order(:time_created).reverse.each do |post|
-          if find_distance(current_user.latitude,current_user.longitude,post.latitude,post.longitude) <= 20
-            @posts << post
+      case params["order"]
+        when "newest"
+          Post.order(:time_created).reverse.each do |post|
+            if find_distance(current_user.latitude,current_user.longitude,post.latitude,post.longitude) <= 20
+              @posts << post
+            end
           end
-        end
-      elsif params["order"] == "voted"
-        Post.order(:score).reverse.each do |post|
-          if find_distance(current_user.latitude,current_user.longitude,post.latitude,post.longitude) <= 20
-            @posts << post
+        when "voted"
+          Post.order(:score).reverse.each do |post|
+            if find_distance(current_user.latitude,current_user.longitude,post.latitude,post.longitude) <= 20
+              @posts << post
+            end
           end
-        end
-      elsif params["order"] == "commented"
-        Post.order(:num_comments).reverse.each do |post|
-          if find_distance(current_user.latitude,current_user.longitude,post.latitude,post.longitude) <= 20
-            @posts << post
+        when "commented"
+          Post.order(:num_comments).reverse.each do |post|
+            if find_distance(current_user.latitude,current_user.longitude,post.latitude,post.longitude) <= 20
+              @posts << post
+            end
           end
-        end
+        else
       end
     end
 

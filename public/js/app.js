@@ -96,12 +96,6 @@ $(function () {
         }
     });
 
-    var height = $("#order-select").css("height");
-    var position = $("#order-select").css("margin-top");
-
-    console.log(height);
-    console.log(position);
-
     $(".delete-btn").on("click",function (event) {
         console.log("delte");
         console.log(this.id);

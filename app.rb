@@ -7,11 +7,10 @@ class Chit_Chat < Sinatra::Base
   end
 
   use Rack::Session::Cookie, :key=> 'rack.session',
-      #:secret =>  ENV['SESSION_SECRET']
-      :expire_after => 2592000,
-      :secret => '90d0610a8ae346d7c1952d331c1759c95e2955acd74df1a7271c9a9130a7233c'
+      :secret =>  ENV['SESSION_SECRET'],
+      :expire_after => 2592000
 
   use Rack::Protection::AuthenticityToken
   use Rack::PostBodyContentTypeParser
 
-end
+endgit 
