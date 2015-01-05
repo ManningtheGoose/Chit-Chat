@@ -13,4 +13,4 @@ class Chit_Chat < Sinatra::Base
   use Rack::Protection::AuthenticityToken
   use Rack::PostBodyContentTypeParser
 
-endgit 
+end

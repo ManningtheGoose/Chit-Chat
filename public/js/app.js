@@ -101,6 +101,12 @@ $(function () {
         console.log(this.id);
        $("#"+ this.id+".delete-form").submit();
     });
+
+    $(".delete-comment-btn").on("click",function (event) {
+        console.log("delte");
+        console.log(this.id);
+        $("#"+ this.id+".delete-comment-form").submit();
+    });
 });
 
 function refreshLocation (old_lat,old_long) {

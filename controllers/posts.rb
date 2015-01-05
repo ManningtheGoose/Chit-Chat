@@ -83,7 +83,6 @@ class Chit_Chat < Sinatra::Base
   post '/post/upvote' do
     post = Post.where(:id => params[:post_id]).first
     vote = post.votes_dataset.where(:owner_id => current_user.id).first
-    #puts vote.inspect
 
     if vote == nil
       vote = Vote.new
@@ -102,12 +101,10 @@ class Chit_Chat < Sinatra::Base
       post.score = 0
       post.score += vote.value
     end
-   # puts post.score.inspect
+
     post.save
 
     return {:score => post.score.to_s}.to_json
-
-
   end
 
   post '/post/downvote' do

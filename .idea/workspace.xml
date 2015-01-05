@@ -2,71 +2,72 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39326428-9dd5-4d4d-b459-981b4c8ce220" name="Default" comment="Inital commit">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/migrations/001_create_users.rb" afterPath="$PROJECT_DIR$/migrations/001_create_users.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/migrations/002_create_posts.rb" afterPath="$PROJECT_DIR$/migrations/002_create_posts.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/migrations/003_create_comments.rb" afterPath="$PROJECT_DIR$/migrations/003_create_comments.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Chit Chat.iml" afterPath="$PROJECT_DIR$/.idea/Chit Chat.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/google-code-prettify/README-zh-Hans.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/google-code-prettify/README-zh-Hans.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/README.md" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-toolbar/README.md" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-toolbar/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/prettify-element/README.md" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/prettify-element/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/app.css" afterPath="$PROJECT_DIR$/public/css/app.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demo.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.erb" afterPath="$PROJECT_DIR$/views/layout.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app.js" afterPath="$PROJECT_DIR$/public/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.rb" afterPath="$PROJECT_DIR$/app.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/bower.json" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/comment.rb" afterPath="$PROJECT_DIR$/models/comment.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-doc-viewer/elements/core-doc-toc.css" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-doc-viewer/elements/core-doc-toc.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-doc-viewer/elements/core-doc-toc.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-doc-viewer/elements/core-doc-toc.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/test/core-list-basic.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/test/core-list-basic.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/test/core-list-data.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/test/core-list-data.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/test/core-list-selection.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/test/core-list-selection.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/core-list.css" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/core-list.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/core-list.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/core-list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-overlay/tests/html/core-overlay-basic.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-overlay/tests/html/core-overlay-basic.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-overlay/core-overlay-layer.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-overlay/core-overlay-layer.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-overlay/tests/html/core-overlay-positioning-margin.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-overlay/tests/html/core-overlay-positioning-margin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-overlay/tests/html/core-overlay-positioning.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-overlay/tests/html/core-overlay-positioning.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-overlay/tests/html/core-overlay-scroll.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-overlay/tests/html/core-overlay-scroll.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-style/core-style.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-style/core-style.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-debug-grid.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-debug-grid.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-overlay/tests/tests.json" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-overlay/tests/tests.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-debug.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-debug.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-flickr-grid-grouped.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-flickr-grid-grouped.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-flickr-grid.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-flickr-grid.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-flickr-responsive.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-flickr-responsive.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-flickr.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-flickr.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-grid-grouped.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-grid-grouped.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-grid.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-grid.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-messages-shp.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-messages-shp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-messages.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-messages.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-variable.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-variable.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.rb" afterPath="$PROJECT_DIR$/app.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/google-code-prettify/README-zh-Hans.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/google-code-prettify/README-zh-Hans.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/google-code-prettify/styles/desert.css" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/google-code-prettify/styles/desert.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-layout-trbl/demo.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-layout-trbl/demo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/post.rb" afterPath="$PROJECT_DIR$/models/post.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/comment.rb" afterPath="$PROJECT_DIR$/models/comment.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/users.rb" afterPath="$PROJECT_DIR$/controllers/users.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-component-page/demo.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-component-page/demo.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-drag-drop/demo.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-drag-drop/demo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-layout-trbl/demo.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-layout-trbl/demo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demo.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-pages/demo.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-pages/demo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/marked-element/demo.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/marked-element/demo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/google-code-prettify/styles/desert.css" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/google-code-prettify/styles/desert.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-overlay/gulpfile.js" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-overlay/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/helpers/helpers.rb" afterPath="$PROJECT_DIR$/helpers/helpers.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-overlay/tests/js/htmltests.js" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-overlay/tests/js/htmltests.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-elements/index.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-elements/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/index.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-signals/index.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-signals/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.erb" afterPath="$PROJECT_DIR$/views/layout.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/polymer/layout.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/polymer/layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/polymer-test-tools/mocha/media/logo.svg" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/polymer-test-tools/mocha/media/logo.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/main.erb" afterPath="$PROJECT_DIR$/views/main.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-style/core-style.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-style/core-style.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/helpers/helpers.rb" afterPath="$PROJECT_DIR$/helpers/helpers.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-grid.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-grid.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/marked-element/marked-import.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/marked-element/marked-import.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/polymer/polymer.js" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/polymer/polymer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/post.rb" afterPath="$PROJECT_DIR$/models/post.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/posts.rb" afterPath="$PROJECT_DIR$/controllers/posts.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/prettify-element/prettify-import.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/prettify-element/prettify-import.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-overlay/tests/runner.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-overlay/tests/runner.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-overlay/core-overlay-layer.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-overlay/core-overlay-layer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-overlay/tests/html/core-overlay-scroll.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-overlay/tests/html/core-overlay-scroll.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/test/core-list-basic.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/test/core-list-basic.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/migrations/003_create_comments.rb" afterPath="$PROJECT_DIR$/migrations/003_create_comments.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-toolbar/README.md" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-toolbar/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/polymer-test-tools/mocha/media/logo.svg" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/polymer-test-tools/mocha/media/logo.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/core-list.css" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/core-list.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/google-code-prettify/styles/sons-of-obsidian.css" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/google-code-prettify/styles/sons-of-obsidian.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-overlay/tests/tests.json" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-overlay/tests/tests.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/posts.rb" afterPath="$PROJECT_DIR$/controllers/posts.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-overlay/tests/js/htmltests.js" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-overlay/tests/js/htmltests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-grid-grouped.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-grid-grouped.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/marked-element/demo.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/marked-element/demo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-overlay/tests/html/core-overlay-basic.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-overlay/tests/html/core-overlay-basic.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/index.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/main.erb" afterPath="$PROJECT_DIR$/views/main.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-flickr-grid-grouped.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-flickr-grid-grouped.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-flickr-responsive.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-flickr-responsive.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-debug-grid.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-debug-grid.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/README.md" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-pages/demo.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-pages/demo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/prettify-element/prettify-import.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/prettify-element/prettify-import.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/test/core-list-selection.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/test/core-list-selection.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-messages-shp.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-messages-shp.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/polymer/polymer.js" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/polymer/polymer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/migrations/002_create_posts.rb" afterPath="$PROJECT_DIR$/migrations/002_create_posts.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/polymer/layout.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/polymer/layout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-signals/index.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-signals/index.html" />
+      <change type="MODIFICATION" beforePath="$APPLICATION_CONFIG_DIR$/options/security.xml" afterPath="$APPLICATION_CONFIG_DIR$/options/security.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-messages.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-messages.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-overlay/gulpfile.js" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-overlay/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-doc-viewer/elements/core-doc-toc.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-doc-viewer/elements/core-doc-toc.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-flickr.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-flickr.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/user.rb" afterPath="$PROJECT_DIR$/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/users.rb" afterPath="$PROJECT_DIR$/controllers/users.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-flickr-grid.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-flickr-grid.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/prettify-element/README.md" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/prettify-element/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-doc-viewer/elements/core-doc-toc.css" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-doc-viewer/elements/core-doc-toc.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-overlay/tests/runner.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-overlay/tests/runner.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-variable.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/demo-variable.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/app.css" afterPath="$PROJECT_DIR$/public/css/app.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/bower.json" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/demos/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-overlay/tests/html/core-overlay-positioning.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-overlay/tests/html/core-overlay-positioning.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/migrations/001_create_users.rb" afterPath="$PROJECT_DIR$/migrations/001_create_users.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Chit Chat.iml" afterPath="$PROJECT_DIR$/.idea/Chit Chat.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/core-list.html" afterPath="$PROJECT_DIR$/../Tennis Planner/public/bower_components/core-list/core-list.html" />
     </list>
     <ignored path="Chit Chat.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -80,10 +81,11 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Chit Chat@config_ru.coverage" NAME="config.ru Coverage Results" MODIFIED="1420315888323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Chit Chat" />
+    <SUITE FILE_PATH="coverage/Chit Chat@config_ru.coverage" NAME="config.ru Coverage Results" MODIFIED="1420480276868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Chit Chat" />
     <SUITE FILE_PATH="coverage/Chit Chat@up__Chit_Chat.coverage" NAME="up: Chit Chat Coverage Results" MODIFIED="1420248608941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Chit Chat" />
     <SUITE FILE_PATH="coverage/Chit Chat@Config.coverage" NAME="config Coverage Results" MODIFIED="1418480897504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Chit Chat" />
     <SUITE FILE_PATH="coverage/Chit Chat@down__Chit_Chat.coverage" NAME="down: Chit Chat Coverage Results" MODIFIED="1420248601076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Chit Chat" />
+    <SUITE FILE_PATH="coverage/Chit Chat@config.coverage" NAME="config Coverage Results" MODIFIED="1420383730361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Chit Chat" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -97,11 +99,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="users.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controllers/users.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6944444" vertical-offset="0" max-vertical-offset="432">
+              <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="main.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/main.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.75" vertical-offset="1812" max-vertical-offset="2220">
-              <caret line="122" column="20" selection-start-line="122" selection-start-column="20" selection-end-line="122" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1426" max-vertical-offset="2220">
+              <caret line="118" column="55" selection-start-line="118" selection-start-column="55" selection-end-line="118" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="helpers.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/helpers/helpers.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="540">
+              <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -110,38 +132,28 @@
       <file leaf-file-name="001_create_users.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/migrations/001_create_users.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+            <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="285">
               <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="004_create_votes.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/migrations/004_create_votes.rb">
+      <file leaf-file-name="comments.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/comments.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-              <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="615" max-vertical-offset="1530">
+              <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vote.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/vote.rb">
+      <file leaf-file-name="posts.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/posts.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
-              <caret line="3" column="63" selection-start-line="3" selection-start-column="63" selection-end-line="3" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="002_create_posts.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/migrations/002_create_posts.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-              <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1818" max-vertical-offset="2250">
+              <caret line="28" column="108" selection-start-line="28" selection-start-column="108" selection-end-line="28" selection-end-column="108" />
               <folding />
             </state>
           </provider>
@@ -150,28 +162,28 @@
       <file leaf-file-name="post.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/post.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="38.0" vertical-offset="1827" max-vertical-offset="2235">
-              <caret line="61" column="35" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1756" max-vertical-offset="2385">
+              <caret line="135" column="65" selection-start-line="135" selection-start-column="65" selection-end-line="135" selection-end-column="65" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.rb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app.rb">
+      <file leaf-file-name="config.ru" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.ru">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5208333" vertical-offset="0" max-vertical-offset="432">
-              <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/app.css">
+      <file leaf-file-name="comment.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/comment.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="573" max-vertical-offset="1005">
-              <caret line="30" column="15" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="180">
+              <caret line="4" column="58" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -180,18 +192,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2100">
-              <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/layout.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.5" vertical-offset="132" max-vertical-offset="600">
-              <caret line="24" column="93" selection-start-line="24" selection-start-column="93" selection-end-line="24" selection-end-column="93" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1147" max-vertical-offset="2190">
+              <caret line="107" column="39" selection-start-line="107" selection-start-column="39" selection-end-line="107" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -210,7 +212,6 @@
         <option value="$PROJECT_DIR$/migrations/003_create_users.rb" />
         <option value="$PROJECT_DIR$/migrations/001_create_posts.rb" />
         <option value="$PROJECT_DIR$/migrations/002_create_comments.rb" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/migrations/004_create_posts_users.rb" />
         <option value="$PROJECT_DIR$/migrations/004_create_users_posts.rb" />
         <option value="$PROJECT_DIR$/migrations/005_create_votes.rb" />
@@ -221,19 +222,20 @@
         <option value="$PROJECT_DIR$/migrations/003_create_comments.rb" />
         <option value="$PROJECT_DIR$/config.ru" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/controllers/users.rb" />
         <option value="$PROJECT_DIR$/helpers/helpers.rb" />
         <option value="$PROJECT_DIR$/migrations/002_create_posts.rb" />
         <option value="$PROJECT_DIR$/views/layout.erb" />
-        <option value="$PROJECT_DIR$/views/main.erb" />
         <option value="$PROJECT_DIR$/models/user.rb" />
-        <option value="$PROJECT_DIR$/views/post.erb" />
         <option value="$PROJECT_DIR$/public/css/app.css" />
         <option value="$PROJECT_DIR$/controllers/comments.rb" />
-        <option value="$PROJECT_DIR$/controllers/posts.rb" />
         <option value="$PROJECT_DIR$/migrations/001_create_users.rb" />
-        <option value="$PROJECT_DIR$/public/js/app.js" />
         <option value="$PROJECT_DIR$/app.rb" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/controllers/posts.rb" />
+        <option value="$PROJECT_DIR$/controllers/users.rb" />
+        <option value="$PROJECT_DIR$/public/js/app.js" />
+        <option value="$PROJECT_DIR$/views/main.erb" />
+        <option value="$PROJECT_DIR$/views/post.erb" />
       </list>
     </option>
   </component>
@@ -425,14 +427,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="http.certificates" />
+    <property name="options.lastSelected" value="Console Folding" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
   </component>
-  <component name="RunManager" selected="Ruby.config">
+  <component name="RunManager" selected="Rack.config.ru">
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
       <module name="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -608,7 +610,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2496063" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32452276" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32452276" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -844,13 +846,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="407">
-          <caret line="0" column="48" selection-start-line="0" selection-start-column="48" selection-end-line="0" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.1.1/gems/sinatra-1.4.5/lib/sinatra/base.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="10686" max-vertical-offset="30750">
@@ -879,27 +874,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/comment.rb">
+    <entry file="file://$PROJECT_DIR$/public/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
-          <caret line="4" column="58" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1005">
+          <caret line="30" column="15" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/post.rb">
+    <entry file="file://$PROJECT_DIR$/views/layout.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
-          <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
-          <folding />
+        <state vertical-scroll-proportion="-9.5" vertical-offset="132" max-vertical-offset="600">
+          <caret line="24" column="93" selection-start-line="24" selection-start-column="93" selection-end-line="24" selection-end-column="93" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/user.rb">
+    <entry file="file://$PROJECT_DIR$/app.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/002_create_posts.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -907,14 +906,56 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
           <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/post.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+          <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/004_create_votes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/vote.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
+          <caret line="3" column="63" selection-start-line="3" selection-start-column="63" selection-end-line="3" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="135">
+          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/001_create_users.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.ru">
+    <entry file="file://$PROJECT_DIR$/models/comment.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+          <caret line="4" column="58" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
           <folding />
         </state>
       </provider>
@@ -927,106 +968,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/posts.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1863" max-vertical-offset="2295">
-          <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/users.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/helpers/helpers.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="540">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
           <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/migrations/002_create_posts.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/migrations/001_create_users.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/migrations/004_create_votes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/vote.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
-          <caret line="3" column="63" selection-start-line="3" selection-start-column="63" selection-end-line="3" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1005">
-          <caret line="30" column="15" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2100">
-          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.5" vertical-offset="132" max-vertical-offset="600">
-          <caret line="24" column="93" selection-start-line="24" selection-start-column="93" selection-end-line="24" selection-end-column="93" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1147" max-vertical-offset="2190">
+          <caret line="107" column="39" selection-start-line="107" selection-start-column="39" selection-end-line="107" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/main.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.75" vertical-offset="1812" max-vertical-offset="2220">
-          <caret line="122" column="20" selection-start-line="122" selection-start-column="20" selection-end-line="122" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1426" max-vertical-offset="2220">
+          <caret line="118" column="55" selection-start-line="118" selection-start-column="55" selection-end-line="118" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/post.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="38.0" vertical-offset="1827" max-vertical-offset="2235">
-          <caret line="61" column="35" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1756" max-vertical-offset="2385">
+          <caret line="135" column="65" selection-start-line="135" selection-start-column="65" selection-end-line="135" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.rb">
+    <entry file="file://$PROJECT_DIR$/config.ru">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5208333" vertical-offset="0" max-vertical-offset="432">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/posts.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1818" max-vertical-offset="2250">
+          <caret line="28" column="108" selection-start-line="28" selection-start-column="108" selection-end-line="28" selection-end-column="108" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/users.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6944444" vertical-offset="0" max-vertical-offset="432">
+          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
           <folding />
         </state>
       </provider>
